@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden; /* Empêche le défilement horizontal de la page */
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            white-space: nowrap; /* Empêche le retour à la ligne des éléments de la navbar */
+        }
+
+        .nav-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-item {
+            display: inline;
+        }
+
+        .nav-item a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav-item a:hover {
+            background-color: #575757;
+            color: #ffffff;
+        }
+        .nav-item a:active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Conteneur des sections */
+        .container {
+            display: flex;
+            flex-wrap: nowrap; /* Empêche le retour à la ligne des sections */
+            overflow-x: auto; /* Activation du défilement horizontal */
+            scroll-snap-type: x mandatory; /* Défilement obligatoire en horizontal */
+            height: 100vh; /* Hauteur de la fenêtre visible */
+        }
+
+        /* Sections */
+        .section {
+            flex: 0 0 100vw; /* Largeur d'une section */
+            height: 100vh; /* Hauteur d'une section */
+            scroll-snap-align: start; /* Alignement de défilement */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+
+        .section:nth-child(even) {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .section:nth-child(odd) {
+            background-color: #e0e0e0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="contact.html">A propos de nous</a></li>
+            <li class="nav-item"><a href="theorie de nombre.html">Théorie de nombre</a></li>
+            <li class="nav-item"><a href="Géométrie.html">Géométrie</a></li>
+            <li class="nav-item"><a href="Combinatoire.html">Combinatoire</a></li>
+            <li class="nav-item"><a href="Equation fonctionnel.html">Equation fonctionnelle</a></li>
+            <li class="nav-item"><a href="Signaler un probléme.html">Signaler un Problème</a></li>
+            <li class="nav-item"><a href="formulaire de contact.html">Formulaire de contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="section1" class="section">
+            <h2>Math Olympiad</h2>
+            <p>Math olympiad team</p>
+        </section>
+        <section id="section2" class="section">
+            <h2>A propos de nous</h2>
+            <p>Section à propos de votre entreprise ou votre équipe.</p>
+        </section>
+        <section id="section3" class="section">
+            <h2>Géométrie</h2>
+            <p>Section sur la géométrie mathématique.</p>
+        </section>
+        <section id="section4" class="section">
+            <h2>Combinatoire</h2>
+            <p>Section sur la combinatoire.</p>
+        </section>
+        <section id="section5" class="section">
+            <h2>Equation fonctionnelle</h2>
+            <p>Section sur les équations fonctionnelles.</p>
+        </section>
+        <section id="section6" class="section">
+            <h2>Signaler un Problème</h2>
+            <p>Section pour signaler un problème.</p>
+        </section>
+        <section id="section7" class="section">
+            <h2>Formulaire de contact</h2>
+            <p>Section pour le formulaire de contact.</p>
+        </section>
+    </div>
+</body>
+</html>
